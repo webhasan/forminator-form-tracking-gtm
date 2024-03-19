@@ -1,5 +1,5 @@
 # Forminator Form Tracking with Google Tag Manager
-## User inputs included (name, email, phone number, etc) which is required for enhance conversion tracking
+## User inputs (name, email, phone number, etc) included on dataLayer which is required for enhance conversion tracking
 
 [Video Tutorial 🔴 ▶️](https://youtu.be/JEtaWux-Jds)
 
