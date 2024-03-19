@@ -1,0 +1,22 @@
+<script>
+(function() {
+    function formDataToObject(formData) {
+      const object = {};
+      formData.forEach((value, key) => {
+        object[key] = value;
+      });
+      return object;
+    }
+
+    jQuery(document).on('forminator:form:submit:success', function (e, formData) { 
+        var formData = formDataToObject(formData)
+
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            event: 'forminator',
+            form_id: formData.form_id,
+            inputs: formData
+        })
+    });
+})();
+</script>
